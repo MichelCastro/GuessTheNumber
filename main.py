@@ -1,7 +1,7 @@
 from random import randint
 
 
-def number_msg(rand_num, num):
+def number_msg(rand_num, num):  # Shows to the user how close their are.
     if num == rand_num:
         return f'You got it!! The number is {rand_num}'
     if rand_num - 5 < num < rand_num + 5:
@@ -10,9 +10,9 @@ def number_msg(rand_num, num):
         return "You're far away!"
 
 
-def again(chose):
+def again(chose):  # Run the main again
     if chose == 'y':
-        print('\n'*20)
+        print('\n' * 20)
         main()
     else:
         pass
